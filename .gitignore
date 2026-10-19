@@ -1,2 +1,29 @@
-dist/
+# Dependencies and generated bundles
 node_modules/
+dist/
+
+# Local credentials (keep sanitized examples versionable)
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Build, test, and tool caches
+*.tsbuildinfo
+coverage/
+.cache/
+
+# Logs and local editor/OS files
+*.log
+*.log.*
+.DS_Store
+._*
+.idea/
+*.swp
+*.swo
+*~
