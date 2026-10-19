@@ -1,0 +1,28 @@
+{
+  "name": "bb-plugin-workspace-window-title",
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "bb": ">=0.46.1",
+    "bbPluginSdk": ">=0.6.49"
+  },
+  "bb": {
+    "name": "Workspace Window Title",
+    "description": "Set each BB window title to its currently focused workspace.",
+    "branding": { "icon": "AppWindow" },
+    "server": "./server.ts",
+    "app": "./app.tsx",
+    "skills": ["skills"]
+  },
+  "scripts": {
+    "build": "bb plugin build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@get-bb/plugin-sdk": "0.6.49",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}
